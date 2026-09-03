@@ -10,11 +10,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: " Pressionar o acelerador ao máximo e largar com tudo.",
-                afirmacao: "Dosar o pé na embreagem para evitar que os pneus girem em falso.. "
+                afirmacao: "Você acelerou demais, os pneus fritaram no asfalto e o carro destracionou. O adversário colocou meio carro na frente. Como reagir? "
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: " Dosar o pé na embreagem para evitar que os pneus girem em falso.",
+                afirmacao: "Injetar o Nitro imediatamente para compensar a perda de espaço."
             }
         ]
     },
