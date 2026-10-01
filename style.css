@@ -1,10 +1,22 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #6155f5;
-    --cor-texto: #D7F9FF;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+:root {
+    --cor-fundo: #01080E;
+    --cor-principal: #0B0D20;
+    --cor-secundaria: #181B30; 
+    --cor-destaque: #6155F5;
+    --cor-destaque-hover: #7367FF;
+    --cor-texto: #D7F9FF;
+    --cor-texto-suave: #A0B3C6;
+    --sombra-glow: 0 0 30px rgba(97, 85, 245, 0.2);
+    --borda-suave: 1px solid rgba(215, 249, 255, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -14,30 +26,90 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
-
-.caixa-principal{
-    background-color: var(--cor-principal);
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
     padding: 20px;
 }
 
-h1{
-    color: var(--cor-destaque);
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 35px 30px;
+    border-radius: 20px;
+    border: var(--borda-suave);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), var(--sombra-glow);
 }
 
-button {
+h1 {
+    color: var(--cor-destaque);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.caixa-perguntas {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: var(--cor-texto);
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button, .btn-resposta {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
-    border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
+    border: var(--borda-suave);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
 }
 
-button:hover{
+button:hover, .btn-resposta:hover {
     background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(97, 85, 245, 0.35);
+    border-color: transparent;
+}
+
+button:active, .btn-resposta:active {
+    transform: translateY(0);
+}
+
+.btn-reiniciar {
+    background-color: var(--cor-destaque);
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-reiniciar:hover {
+    background-color: var(--cor-destaque-hover);
+    box-shadow: 0 8px 25px rgba(115, 103, 255, 0.5);
+}
+
+.texto-resultado {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--cor-texto-suave);
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 12px;
+    border: var(--borda-suave);
+    margin-bottom: 20px;
+    text-align: left;
 }
