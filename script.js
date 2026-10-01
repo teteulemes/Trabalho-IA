@@ -25,13 +25,13 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Fazer uma troca de marcha rápida e agressiva no limite do giro.",
-                afirmacao: "O motor respondeu bem, você recuperou a diferença e cruzou a linha lado a lado. [Vitória por milésimos]",
-                proxima: null
+                afirmacao: "O motor respondeu bem e você conseguiu emparelhar lado a lado. ",
+                proxima: 3
             },
             {
                 texto: "Injetar o Nitro imediatamente para compensar a perda de espaço.",
-                afirmacao: "O excesso de potência com pouca aderência fez o carro rabejar. Você teve que tirar o pé. [Derrota por segurança]",
-                proxima: null
+                afirmacao: "O excesso de potência com pouca aderência fez o carro rabejar na pista. ",
+                proxima: 4
             }
         ]
     },
@@ -40,12 +40,42 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Manter o foco total nas trocas de marcha e seguir em linha reta.",
-                afirmacao: "Trocas perfeitas do início ao fim. O carro cruzou a linha no tempo limite da categoria. [Vitória e recorde da pista]",
-                proxima: null
+                afirmacao: "Você manteve uma pilotagem cirúrgica e constante do início ao fim. ",
+                proxima: 3
             },
             {
                 texto: "Olhar pelo retrovisor para monitorar a aproximação do adversário.",
-                afirmacao: "Você perdeu o tempo exato da troca de marcha ao se distrair. O oponente passou no último segundo. [Derrota na linha de chegada]",
+                afirmacao: "Sua hesitação momentânea deu espaço para o oponente se aproximar rápido. ",
+                proxima: 4
+            }
+        ]
+    },
+    {
+        enunciado: "Faltam apenas 100 metros para a linha de chegada e os carros estão disputando palmo a palmo. Qual sua decisão final?",
+        alternativas: [
+            {
+                texto: "Engatar a última marcha no ponto perfeito de corte e manter o pé no fundo.",
+                afirmacao: "O motor rendeu ao máximo e você cruzou a linha em primeiro lugar! [Final: Vitória Épica e Recorde da Pista]",
+                proxima: null
+            },
+            {
+                texto: "Tentar forçar a passagem para fechar a trajetória do adversário.",
+                afirmacao: "O carro perdeu o ponto ideal de aceleração na reta final. [Final: Derrota por milésimos no último segundo]",
+                proxima: null
+            }
+        ]
+    },
+    {
+        enunciado: "O carro perdeu estabilidade e o adversário está prestes a ultrapassar. O que fazer para tentar salvar a corrida?",
+        alternativas: [
+            {
+                texto: "Corrigir suavemente o volante e acionar o Nitro agora que os pneus agarraram no asfalto.",
+                afirmacao: "A manobra foi precisa! O carro deu um salto de velocidade e retomou a ponta. [Final: Vitória com recuperação incrível]",
+                proxima: null
+            },
+            {
+                texto: "Tirar o pé do acelerador para evitar rodar na pista.",
+                afirmacao: "Você evitou o acidente com segurança, mas o oponente cruzou a linha de chegada na frente. [Final: Derrota por segurança]",
                 proxima: null
             }
         ]
